@@ -10,19 +10,25 @@ const Triangleone = () => {
     const avg =(x+y)/2;
     console.log(avg);
  }
- const countZeros(...n.number{}): void{
+
+ const CountNumber(x:number, ...n:number[]): number =>{
     let count = 0 
-for(let i=0; i< n.length; i++)
-    console.log([i])
-if (condition) {
-    
+for(let i=0; i< n.length; i++){
+if (n[i] === x) 
+    count++
 }
+  console.log(count)
+  return count
  }
+
+
 
   return (
     <div>
       <>
+      
       <button className="bg-amber-600" onClick={() => takeAvg(5,2)}></button></>
+     
     </div>
   )
 }
